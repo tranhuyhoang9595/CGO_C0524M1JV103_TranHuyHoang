@@ -1,0 +1,20 @@
+BEGIN
+    INPUT "Nhập vào số lượng giá trị trong dãy số: " INTO N
+    
+    DECLARE an empty list called values
+    
+    FOR i FROM 1 TO N DO
+        INPUT "Nhập vào giá trị a" + i + ": " INTO value
+        ADD value TO values
+    END FOR
+    
+    SET max_value TO values[0]
+    
+    FOR EACH value IN values FROM index 1 TO N-1 DO
+        IF value > max_value THEN
+            SET max_value TO value
+        END IF
+    END FOR
+    
+    PRINT "Giá trị lớn nhất trong dãy số là: " + max_value
+END
