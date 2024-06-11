@@ -1,0 +1,13 @@
+BEGIN
+	Input a,b,c
+	If a>=b AND a>=c
+		Display "a is the largest number"
+	Else
+	 	a<b AND a<c
+		If b>=c
+			Display "b is the largest number"
+		Else
+			Display "c is the largest number"
+		End If
+	End If
+END
