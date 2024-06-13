@@ -1,0 +1,10 @@
+BEGIN
+	Input $USD
+	SET exchange_rate = 23000
+	SET vnd = $USD * exchange_rate
+	DISPLAY vnd
+
+END
+
+
+

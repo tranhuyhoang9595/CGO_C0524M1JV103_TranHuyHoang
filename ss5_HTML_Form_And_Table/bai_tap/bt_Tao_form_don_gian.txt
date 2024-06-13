@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở Thích Của Bạn</title>
+</head>
+<body style="background-color: #E0FFFF;">
+<div style="border: 1px solid #FFA500; width: 300px; padding: 20px; margin: 50px auto; background-color: white;">
+    <h2 style="text-align: center; color: white; background-color: #FFA500; padding: 10px 0;">SỞ THÍCH CỦA BẠN</h2>
+    <form>
+        <div style="margin-bottom: 10px;">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" style="width: 100%;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" style="width: 100%;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Sở thích</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="Thể thao">A
+            <label for="sports">Thể thao</label>
+            <input type="checkbox" id="music" name="hobbies" value="Âm nhạc">
+            <label for="music">Âm nhạc</label>
+            <input type="checkbox" id="reading" name="hobbies" value="Đọc sách">
+            <label for="reading">Đọc sách</label><br>
+            <input type="checkbox" id="web" name="hobbies" value="Lướt web">
+            <label for="web">Lướt web</label>
+            <input type="checkbox" id="gaming" name="hobbies" value="Chơi game">
+            <label for="gaming">Chơi game</label>
+            <input type="checkbox" id="movies" name="hobbies" value="Điện ảnh">
+            <label for="movies">Điện ảnh</label><br>
+            <input type="checkbox" id="travel" name="hobbies" value="Du lịch">
+            <label for="travel">Du lịch</label>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" style="margin-right: 10px;">Gửi thông tin</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
