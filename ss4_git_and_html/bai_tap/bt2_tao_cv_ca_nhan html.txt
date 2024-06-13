@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huy Hoang Tran - Resume</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        h2, h3 {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        .section {
+            margin-bottom: 1.5em;
+        }
+        .contact-info, .skills, .languages {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li, .skills li, .languages li {
+            margin-bottom: 0.5em;
+        }
+        .work-history, .education {
+            list-style-type: none;
+            padding: 0;
+        }
+        .work-history li, .education li {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Huy Hoang Tran</h1><hr>
+
+<div class="section">
+    <h2>Contact</h2>
+    <ul class="contact-info">
+        <li><strong>Address:</strong> Richmond Hill ON </li>
+        <li><strong>Phone:</strong> (411) 111-1111</li>
+        <li><strong>Email:</strong> <a href="mailto:abcxyz@gmail.com">abcxyz@gmail.com</a></li>
+    </ul>
+</div><hr>
+
+<div class="section">
+    <h2>Professional Summary</h2>
+    <p>
+        <li>Documented success for 5 years progressively responsible food service experience.<br>
+        <li>Highly skills in creating and maintaining relationships with customers, employees, and other senior managers.<br>
+        <li>In-depth knowledge of food service management protocols, including food quality, sanitation, and safety.<br>
+        <li>Friendly, enthusiastic, organized, and diligent. Hardworking and passionate with strong organizational skills. Ready to help team achieve company goals.
+    </p>
+</div><hr>
+
+
+
+<div class="section">
+    <h2>Work History</h2>
+    <ul class="work-history">
+        <li>
+            <h3>General Manager, Kinton Ramen</h3>
+            <p><em>Current</em></p>
+            <ul>
+                <li>Ensured all health, food safety, and hygiene standards and policies are followed by team members.</li>
+                <li>Possessed knowledge of the menu with the ability to make suggestions.</li>
+                <li>Delivered in-depth training to workers in food preparation and customer-facing roles to promote strong team performance.</li>
+                <li>Resolved identified negative guest experience issues.</li>
+                <li>Managed schedules, tips, and cash.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Receptionist Supervisor, Danang Vinpearl Resort</h3>
+            <p><em>January 2015 - December 2016</em></p>
+            <ul>
+                <li>Delegated tasks to administrative support staff to organize and improve office efficiency.</li>
+                <li>Managed supervisor itinerary and appointments and streamlined scheduling procedures.</li>
+                <li>Trained team members on new hotel services and products to support promotional efforts.</li>
+                <li>Completed monthly payroll for employees.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Crew Member, Grand Tourane Hotel-Restaurant</h3>
+            <p><em>January 2014 - November 2015</em></p>
+            <ul>
+                <li>Took orders through POS machine.</li>
+                <li>Received and handled payments.</li>
+                <li>Balanced cash every shift.</li>
+                <li>Adapted to all stations.</li>
+                <li>Prepared food and cleaned all kitchen equipment.</li>
+            </ul>
+        </li>
+    </ul>
+</div><hr>
+
+<div class="section">
+    <h2>Education</h2>
+    <ul class="education">
+        <li>
+            <h3>Bachelor of Arts: Finance and Banking</h3>
+            <p><em>Danang University of Economics, January 2013 - September 2017</em></p>
+            <p><strong>GPA:</strong> 3.8/4.0</p>
+        </li>
+        <li>
+            <h3>Business Administration</h3>
+            <p><em>Seneca College, September 2019 - September 2021</em></p>
+            <p>Dean's List, 2nd semester</p>
+            <p><strong>GPA:</strong> 3.5/4.0</p>
+        </li>
+    </ul>
+</div><hr>
+
+<div class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+        <li>Expert in Word, Excel, and PowerPoint</li>
+        <li>Strong attention to detail</li>
+        <li>Ability to effectively involve department staff in the application of quality measurement and improvement tools</li>
+        <li>Effective communication with supervisors, peers, and customers</li>
+        <li>Workflow planning</li>
+        <li>Scheduling</li>
+        <li>Staff management</li>
+        <li>Cash register operation</li>
+    </ul>
+</div><hr>
+
+<div class="section">
+    <h2>Languages</h2>
+    <ul class="languages">
+        <li>Fluent in English and Vietnamese</li>
+    </ul>
+</div>
+</body>
+</html>
+
