@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký người dùng</title>
+
+</head>
+<body>
+<form action="/action_page/php" method="post">
+
+<b style="font-size: 20px"> Họ và tên:</b><br>
+    <input type="text" name="name"><br><br>
+    <b style="font-size: 20px"> Email:</b><br>
+    <input type="text" name="email"><br><br>
+    <b style="font-size: 20px"> Số điện thoại:</b><br>
+    <input type="text" name="phone"><br><br>
+<b style="font-size: 20px">Giới tính:</b><br>
+    <form>
+    <input type="radio" name="gender" value="Male" checked>Nam
+    <input type="radio" name="gender" value="Female">Nữ
+    </form><br>
+
+    <form action="/action_page/php" method="post">
+    <input type="submit" name="submit form" value="Đăng ký">
+    </form>
+
+</form>
+</body>
+</html>
