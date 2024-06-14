@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+    <h1>Market Research Survey</h1>
+    Please take a few moments to complete this satisfaction survey<hr>
+
+</head>
+
+<body>
+
+<p1><b>What is your age range?</b></p1><br>
+
+<select style="width: 500px;height: 20px">
+    <option value="Age range">1-10</option>
+    <option value="Age range">11-18</option>
+    <option value="Age range">18-24</option>
+    <option value="Age range">24-30</option>
+    <option value="Age range">30-36</option>
+</select><br><br>
+
+<p2><b>What is your yearly income range</b></p2><br>
+<select style="width: 500px; height: 20px";>
+    <option value="Income range">$0-$25000</option>
+    <option value="Income range">$25000-$50000</option>
+    <option value="Income range">$50000-$75000</option>
+    <option value="Income range">$75000-$100000</option>
+</select><br><br>
+
+<p3><b>Gender</b></p3><br>
+<input type="radio" name="gender" value="male">Male<br>
+<input type="radio" name="gender" value="female">Female<br><br>
+
+<p4><b>Which of the following products have your purchased in the last 2 months. Please check all that apply</b></p4><br>
+<input type="checkbox" name="product" value="product 1">
+<label>Product 1</label><br>
+<input type="checkbox" name="product" value="product 2">
+<label>Product 2</label><br>
+<input type="checkbox" name="product" value="product 3">
+<label>Product 3</label><br><br>
+
+<p5><b>How often would you use our new product?</b></p5><br>
+<input type="radio" name="frequency" value="daily">
+<label>Daily</label><br>
+<input type="radio" name="frequency" value="weekly">
+<label>Weekly</label><br>
+<input type="radio" name="frequency" value="monthly">
+<label>Monthly</label><br><br>
+
+<p6><b>What would you pay for the new product?</b></p6><br>
+
+$ <input type="text" name="pay_dollars" size="15px"> .
+<input type="text" name="pay_cents" size=2px">
+<pre>      Dollars          Cents</pre>
+
+<p6><b>What features would you like to see in the new product?</b></p6><br>
+<textarea row="50" cols=120></textarea><br><br>
+
+Please rate your level of agreement with the following statements
+
+    <table border="1px">
+    <tr>
+        <th></th>
+        <th style="width:130px;">Strongly Disagree</th>
+        <th style="width:130px;">Disagree</th>
+        <th style="width:130px;">Agree</th>
+        <th style="width:130px;">Strongly Agree</th>
+    </tr>
+        <form>
+    <tr>
+        <td><b>Our products are priced fairly.</b></td>
+        <th><input type="radio" name="satisfaction" value="1"><br>1</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>2</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>3</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>4</br</th>
+    </tr>
+        </form>
+        <form>
+    <tr>
+        <td><b>Our products are highly quality.</b></td>
+        <th><input type="radio" name="satisfaction" value="1"><br>1</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>2</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>3</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>4</br</th>
+    </tr>
+        </form>
+    <tr>
+        <td><b>You would recommend our product to a friend or coworker.</b></td>
+        <th><input type="radio" name="satisfaction" value="1"><br>1</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>2</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>3</br</th>
+        <th><input type="radio" name="satisfaction" value="1"><br>4</br</th>
+    </tr>
+    </table><br>
+<form action="/action_page/php" method="get">
+<input type="submit" name="submitform" style="width: 100px">
+</form>
+
+
+</body>
+</html>
