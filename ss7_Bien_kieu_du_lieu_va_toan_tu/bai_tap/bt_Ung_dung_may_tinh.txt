@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+</head>
+<body>
+<h1>Calculator</h1>
+
+<form>
+    <label for="text1">Number 1:</label><input type="text" id="text1">
+    <label for="text2">Number 2:</label><input type="text" id="text2"><br><br>
+    <button type="button" onclick="addition()">Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="multiplication()">Multiplication(X)</button>
+    <button type="button" onclick="division()">Division(/)</button>
+</form>
+
+<h6 style="font-size: 1.5em" id="result">Ket qua la :</h6>
+
+<script>
+    function addition(){
+        let a1 = parseFloat(document.getElementById("text1").value);
+        let b1 = parseFloat(document.getElementById("text2").value);
+        let result = a1 + b1;
+        document.getElementById("result").innerHTML = "Result Addition: " + result;
+    }
+
+    function subtraction(){
+        let a2 = parseFloat(document.getElementById("text1").value);
+        let b2 = parseFloat(document.getElementById("text2").value);
+        let result = a2 - b2;
+        document.getElementById("result").innerHTML = "Result Subtraction: " + result;
+    }
+
+    function multiplication(){
+        let a3 = parseFloat(document.getElementById("text1").value);
+        let b3 = parseFloat(document.getElementById("text2").value);
+        let result = a3 * b3;
+        document.getElementById("result").innerHTML = "Result Multiplication: " + result;
+    }
+
+    function division(){
+        let a4 = parseFloat(document.getElementById("text1").value);
+        let b4 = parseFloat(document.getElementById("text2").value);
+        let result = a4 / b4;
+        document.getElementById("result").innerHTML = "Result Division: " + result;
+    }
+</script>
+</body>
+</html>
