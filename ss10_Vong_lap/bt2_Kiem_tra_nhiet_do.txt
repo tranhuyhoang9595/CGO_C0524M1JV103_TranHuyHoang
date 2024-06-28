@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nhiệt độ hiện tại</title>
+</head>
+<body>
+<script>
+    while(true){
+        let a = +prompt("Nhập vào nhiệt độ hiện tại (Fahrenheit)");
+
+        if(a<20){
+            prompt("Nhiệt độ quá thấp! Yêu cầu tăng nhiệt độ");
+        }else if(a>100){
+            prompt("Nhiệt độ quá cao! Yêu cầu giảm nhiệt độ");
+        }else{
+            prompt("Nhiệt độ hợp lý");
+            break;
+        }
+    }
+
+</script>
+</body>
+</html>

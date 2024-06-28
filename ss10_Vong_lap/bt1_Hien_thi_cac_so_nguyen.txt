@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    // Bước 1: Khai báo biến numbers và nhập giá trị từ bàn phím
+    let numbers = +prompt("Nhập vào một số nguyên");
+    let count = 0;
+    let N = 2;
+
+    // Hàm kiểm tra số nguyên tố
+    function is_prime(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Bước 4: Trong khi count < numbers thì
+    while (count < numbers) {
+        // Kiểm tra xem N có phải là số nguyên tố không
+        if (is_prime(N)) {
+            // Nếu N là số nguyên tố thì in ra giá trị của N và tăng count lên 1
+            document.write(N + " ");
+            count += 1;
+        }
+        // Tăng giá trị của N lên 1 để kiểm tra số tiếp theo
+        N += 1;
+    }
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

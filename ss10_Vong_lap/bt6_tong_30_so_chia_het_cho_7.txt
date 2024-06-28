@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số chia hết cho 7 đầu tiên trong các số tự nhiên</title>
+</head>
+<body>
+<script>
+    function sumOfMultipleOf7(n) {
+        let count = 0; //biến này dùng để lưu trữ tổng các số chia hết cho 7
+        let sum = 0; // biến này đếm số lượng các số chia hết cho 7 đã tìm thấy
+        let number = 0; // biến này dùng để duyệt qua các số từ 0 trở đi
+
+        while(count < n){ //vòng lặp này sẽ tiếp tục chạy cho đến khi tìm thấy đủ "n" số chia hết cho 7
+            if (number % 7 ===0){ //kiểm tra xem number có chia hết cho 7 hay không. Nếu chia hết cho 7 thì:
+                sum += number; // cộng number vào sum
+                count++;//tăng count lên 1 để đếm số chia hết cho 7 đã tìm thấy
+            }
+            number++; // tăng number lên 1 để kiểm tra số tiếp theo
+        }
+    return sum;
+    }
+    const sum30MultipleOf7 = sumOfMultipleOf7(7);
+    document.write(sum30MultipleOf7);
+</script>
+</body>
+</html>
