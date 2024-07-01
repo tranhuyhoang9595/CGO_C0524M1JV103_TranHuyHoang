@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp theo thứ tự giảm dần</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr [i] = +prompt(`Nhập vào số nguyên thứ ${i + 1}`);
+    }
+    document.write("Mười số nguyên vừa nhập vào là:" + arr + "<br>");
+
+    arr.sort(function (a, b) {
+        return b - a;
+    });
+    document.write("Thứ tự giảm dần của các số nguyên trên là:"+ arr);
+
+
+</script>
+</body>
+</html>
