@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HIỂN THỊ SỐ LỚN NHẤT TRONG MẢNG</title>
+</head>
+<body>
+<script>
+    let arr = [1, 6, 8, 12, 53, 44, 42, 78, 65, 24];
+    let max = arr[0];
+    let maxIndex = 0; // Thêm biến để lưu vị trí của phần tử lớn nhất
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            maxIndex = i; // cập nhập vị trí của phần tử lớn nhất
+        }
+    }
+    console.log("Giá trị lớn nhất trong mảng là" + max);
+    console.log("Vị trí của phần tử lớn nhất trong mảng là" + maxIndex);
+</script>
+</body>
+</html>

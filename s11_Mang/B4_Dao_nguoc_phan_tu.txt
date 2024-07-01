@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<h2>Nhập mảng số nguyên</h2>
+<input type="text" id="arrayInput" placeholder="Nhập các số, cách nhau bằng dấu phẩy">
+<button onclick="reverseArray()">Đảo ngược mảng</button>
+<p id="result"></p>
+
+<script>
+    function reverseArray() {
+        // Lấy giá trị từ input và chuyển thành mảng số nguyên
+        let input = document.getElementById('arrayInput').value;
+        let arr = input.split(',').map(Number);
+
+        // Đảo ngược mảng
+        arr.reverse();
+
+        // Hiển thị kết quả
+        document.getElementById('result').textContent = 'Mảng sau khi đảo ngược: ' + arr.join(', ');
+    }
+</script>
+</body>
+</html>

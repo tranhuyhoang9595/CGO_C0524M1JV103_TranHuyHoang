@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT7</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập vào số nguyên thứ ${i + 1}`);
+    }
+
+    let v = +prompt("Nhập vào giá trị V cần kiểm tra và xóa:");
+    let index = arr.indexOf(v);
+    if (index !== -1) {
+        for (let i = index; i < arr.length - 1; i++) {
+            arr[i]=arr[i+1];
+            }
+        arr[arr.length - 1]=0;
+    }
+    console.log("Mảng sau khi xóa:",arr);
+</script>
+</body>
+</html>
