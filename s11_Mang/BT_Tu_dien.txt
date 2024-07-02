@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển đơn giản</title>
+</head>
+<body>
+
+<label for="tuDien">Nhập từ cần tra: </label><br>
+<input type="text" id="tuDien">
+<input type="button" id="btn" value="Search" onclick="search()">
+
+<p id="result"></p>
+
+<script>
+    let english = ["house", "sport", "memory", "annoying"];
+    let vietnamese = ["nhà", "thể thao", "trí nhớ", "khó chịu"];
+
+    function search() {
+        let input = document.getElementById("tuDien").value.trim().toLowerCase();
+        let index = english.indexOf(input);
+
+        if (index !== -1) {
+            document.getElementById("result").innerText = "Nghĩa của từ này là: " + vietnamese[index];
+        } else {
+            document.getElementById("result").innerText = "Không tìm thấy từ này";
+        }
+    }
+</script>
+
+</body>
+</html>
