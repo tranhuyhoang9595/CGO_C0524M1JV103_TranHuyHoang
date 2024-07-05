@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 tham số</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số thứ 1");
+    let b = +prompt("Nhập vào số thứ 2");
+    let c = a+ b;
+    compareAndSum(a, b);
+
+    function compareAndSum(a, b) {
+        if (a > b) {
+            alert(`${a} lớn hơn ${b}`);
+        } else {
+            alert(`Tổng của hai số là ${c}`)
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
