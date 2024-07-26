@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .phone-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Phone Management</h1>
+    <div class="form-group">
+        <label for="code">Phone Code:</label>
+        <input type="text" id="code">
+    </div>
+    <div class="form-group">
+        <label for="name">Phone Name:</label>
+        <input type="text" id="name">
+    </div>
+    <div class="form-group">
+        <label for="manufacturer">Manufacturer:</label>
+        <input type="text" id="manufacturer">
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price">
+    </div>
+    <div class="form-group">
+        <button onclick="addPhoneFromForm()">Add Phone</button>
+    </div>
+    <div class="form-group">
+        <button onclick="displayPhones()">Display Phones</button>
+    </div>
+</div>
+
+<div class="phone-list">
+    <h2>Phone List</h2>
+    <ul id="phoneList"></ul>
+</div>
+
+<script>
+    class Phone {
+        constructor(code, name, manufacturer, price) {
+            this.code = code;
+            this.name = name;
+            this.manufacturer = manufacturer;
+            this.price = price;
+        }
+
+        getCode() {
+            return this.code;
+        }
+        setCode(code) {
+            this.code = code;
+        }
+
+        getName() {
+            return this.name;
+        }
+        setName(name) {
+            this.name = name;
+        }
+
+        getManufacturer() {
+            return this.manufacturer;
+        }
+        setManufacturer(manufacturer) {
+            this.manufacturer = manufacturer;
+        }
+
+        getPrice() {
+            return this.price;
+        }
+        setPrice(price) {
+            this.price = price;
+        }
+
+        toString() {
+            return `Code: ${this.code}, Name: ${this.name}, Manufacturer: ${this.manufacturer}, Price: ${this.price}`;
+        }
+    }
+
+    let phoneList = [];
+
+    function addPhone(code, name, manufacturer, price) {
+        const phone = new Phone(code, name, manufacturer, price);
+        phoneList.push(phone);
+    }
+
+    function displayPhones() {
+        // Sắp xếp danh sách điện thoại theo tên
+        phoneList.sort((a, b) => a.getName().localeCompare(b.getName()));
+
+        // Hiển thị thông tin điện thoại
+        const phoneListElement = document.getElementById('phoneList');
+        phoneListElement.innerHTML = '';
+        phoneList.forEach(phone => {
+            const listItem = document.createElement('li');
+            listItem.textContent = phone.toString();
+            phoneListElement.appendChild(listItem);
+        });
+    }
+
+    function addPhoneFromForm() {
+        const code = document.getElementById('code').value;
+        const name = document.getElementById('name').value;
+        const manufacturer = document.getElementById('manufacturer').value;
+        const price = parseFloat(document.getElementById('price').value);
+
+        if (code && name && manufacturer && !isNaN(price)) {
+            addPhone(code, name, manufacturer, price);
+            document.getElementById('code').value = '';
+            document.getElementById('name').value = '';
+            document.getElementById('manufacturer').value = '';
+            document.getElementById('price').value = '';
+            alert('Phone added successfully!');
+        } else {
+            alert('Please fill out all fields correctly.');
+        }
+    }
+</script>
+
+</body>
+</html>
