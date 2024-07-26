@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    function countUpperCaseChars(str) {
+        let upperCaseCount = 0;
+        for (let i = 0; i < str.length; i++) {
+            // Kiểm tra xem ký tự có phải là ký tự in hoa không
+            if (str[i] >= 'A' && str[i] <= 'Z') {
+                upperCaseCount++;
+            }
+        }
+        if (upperCaseCount > 0) {
+            return upperCaseCount;
+        } else {
+            return "The String does not contain upper char";
+        }
+    }
+
+
+    let result1 = countUpperCaseChars("Hello World!"); // Có ký tự in hoa
+    console.log(result1); // Kết quả: 2
+
+    let result2 = countUpperCaseChars("hello world!"); // Không có ký tự in hoa
+    console.log(result2); // Kết quả: The String does not contain upper char
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+
+    let input = prompt("Nhập các số nguyên cách nhau bằng dấu phẩy");
+    let numbers = input.split(',').map(Number);
+
+
+    if (numbers.length > 20) {
+        alert("Số lượng phần tử không được vượt quá 20.");
+    } else {
+        let evenSum = 0;
+        let oddSum = 0;
+
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evenSum += numbers[i];
+            } else {
+                oddSum += numbers[i];
+            }
+        }
+
+
+        let result = evenSum - oddSum;
+
+
+        document.write("Danh sách các phần tử của mảng: " + numbers.join(', ') + "<br>");
+        document.write("Hiệu của Tổng các số chẵn và Tổng các số lẻ là: " + result);
+    }
+
+</script>
+</body>
+</html>
